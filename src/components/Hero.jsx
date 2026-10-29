@@ -3,14 +3,25 @@ import { metrics, profile } from "../data.js";
 export default function Hero() {
   return (
     <section className="hero" id="top">
-      <p className="eyebrow">
-        <span className="dot" aria-hidden="true" />
-        Open to SDET roles · {profile.location}
-      </p>
-      <h1>
-        <span>{profile.first}</span>
-        <span className="last">{profile.last}</span>
-      </h1>
+      <div className="identity">
+        <img
+          className="portrait"
+          src="/aaditya.jpg"
+          alt="Aaditya Kumar Gaurav"
+          width="840"
+          height="840"
+        />
+        <div>
+          <p className="eyebrow">
+            <span className="dot" aria-hidden="true" />
+            Open to SDET roles · {profile.location}
+          </p>
+          <h1>
+            <span>{profile.first}</span>
+            <span className="last">{profile.last}</span>
+          </h1>
+        </div>
+      </div>
       <div className="hero-grid">
         <div>
           <p className="lede">{profile.summary}</p>
